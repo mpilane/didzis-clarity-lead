@@ -127,4 +127,8 @@
   .card {
     @apply bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg;
   }
+
+  .about-card {
+    @apply bg-white rounded-lg shadow-md p-6 border-l-4 border-consultant-navy;
+  }
 }

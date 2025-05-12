@@ -33,13 +33,13 @@ const ServicesSection = () => {
   return (
     <section id="services" className="py-20 bg-consultant-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="section-heading text-center">What I Offer</h2>
+        <h2 className="section-heading text-center">WHAT I OFFER</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {services.map((service) => (
             <div key={service.id} className="bg-white rounded-lg shadow-md p-8 transition duration-300 hover:shadow-lg hover:translate-y-[-5px]">
               <h3 className="text-xl font-bold mb-4 text-consultant-navy">
-                {service.id}. {service.title}
+                {service.title}
               </h3>
               <p className="text-consultant-gray-700">{service.description}</p>
             </div>
@@ -47,7 +47,7 @@ const ServicesSection = () => {
         </div>
 
         <div className="text-center">
-          <Button className="bg-consultant-blue-600 hover:bg-consultant-blue-700 text-white px-8 py-6 text-lg">
+          <Button className="bg-consultant-navy hover:bg-consultant-navy-800 text-white px-8 py-6 text-lg">
             Let's Get in Touch
           </Button>
         </div>
