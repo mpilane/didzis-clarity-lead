@@ -1,4 +1,3 @@
-
 import { Award, CheckCheck, Target, Briefcase, Users, Calendar, BarChart, Book } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 const AboutSection = () => {
@@ -12,7 +11,6 @@ const AboutSection = () => {
     text: "Co-founder of several successful ventures",
     icon: <Users className="text-consultant-navy mr-3" size={22} />
   }];
-  
   const keyStrengths = [{
     title: "Business transformation",
     description: "Restructuring companies for long-term growth",
@@ -30,23 +28,19 @@ const AboutSection = () => {
     description: "Guiding leaders to define clear purpose and drive better decisions",
     icon: <Book className="text-white" size={24} />
   }];
-  
-  return (
-    <section id="about" className="py-20 bg-white">
+  return <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="section-heading text-center mb-16">MEET DIDZIS PIĻĀNS</h2>
+        <h2 className="section-heading text-center mb-16">ABOUT ME</h2>
 
         <div className="flex flex-col md:flex-row gap-8 items-stretch mb-12">
           <div className="md:w-1/3">
             <div className="about-card h-full">
               <h3 className="text-xl font-bold text-consultant-navy mb-6">EXPERIENCE HIGHLIGHTS:</h3>
               <ul className="space-y-4">
-                {highlights.map((item, index) => (
-                  <li key={index} className="flex items-center">
+                {highlights.map((item, index) => <li key={index} className="flex items-center">
                     {item.icon}
                     <span className="text-consultant-gray-700">{item.text}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
           </div>
@@ -109,7 +103,6 @@ const AboutSection = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 export default AboutSection;
