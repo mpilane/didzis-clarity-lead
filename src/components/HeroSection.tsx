@@ -16,7 +16,7 @@ const HeroSection = () => {
             </Button>
           </div>
           <div className="md:w-1/2 flex justify-center">
-            <img src="public/lovable-uploads/4fba1ee1-3b7d-4df7-b920-858e2a8c3b43.png" alt="Didzis Piļāns - Business Transformation Expert" className="rounded-lg shadow-xl max-w-sm object-cover" />
+            <img alt="Didzis Piļāns - Business Transformation Expert" className="rounded-lg shadow-xl max-w-sm object-cover" src="/lovable-uploads/407f691e-4636-486a-97b6-9cd16eaded9c.jpg" />
           </div>
         </div>
       </div>
