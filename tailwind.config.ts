@@ -53,7 +53,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Custom consultant brand colors with more pastel blue tones
+				// Custom consultant brand colors with dark blue tones
 				consultant: {
 					blue: {
 						50: '#EFF8FF',  // Lightest pastel blue
@@ -67,7 +67,19 @@ export default {
 						800: '#1E50B3',  // Very dark pastel blue
 						900: '#183C8A',  // Darkest pastel blue
 					},
-					navy: '#0F172A',
+					navy: {
+						DEFAULT: '#0F172A',  // Default navy
+						50: '#F8FAFC',       // Lightest navy
+						100: '#F1F5F9',      // Very light navy
+						200: '#E2E8F0',      // Light navy
+						300: '#CBD5E1',      // Medium-light navy
+						400: '#94A3B8',      // Medium navy
+						500: '#64748B',      // Primary navy
+						600: '#475569',      // Medium-dark navy
+						700: '#334155',      // Dark navy
+						800: '#1E293B',      // Very dark navy
+						900: '#0F172A',      // Darkest navy
+					},
 					gray: {
 						50: '#F9FAFB',
 						100: '#F3F4F6',

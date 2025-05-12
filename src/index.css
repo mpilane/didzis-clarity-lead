@@ -121,7 +121,7 @@
   }
   
   .section-heading {
-    @apply text-2xl md:text-3xl font-heading font-bold mb-8 text-consultant-navy;
+    @apply text-2xl md:text-3xl font-heading font-bold mb-8 text-consultant-navy uppercase tracking-wider;
   }
   
   .card {
