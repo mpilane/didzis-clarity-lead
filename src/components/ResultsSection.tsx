@@ -1,5 +1,5 @@
 
-import { TrendingUp, Chart } from "lucide-react";
+import { TrendingUp, BarChart } from "lucide-react";
 
 const ResultsSection = () => {
   const results = [
@@ -15,7 +15,7 @@ const ResultsSection = () => {
       challenge: "High production costs",
       solution: "Implemented ISO-certified management system",
       impact: "Saved €350,000 in the first year",
-      icon: <Chart size={40} className="text-consultant-blue-500" />
+      icon: <BarChart size={40} className="text-consultant-blue-500" />
     },
     {
       company: "Aerodium",
