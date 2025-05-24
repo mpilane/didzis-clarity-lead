@@ -59,26 +59,15 @@ const AboutSection = () => {
         <h2 className="text-3xl md:text-4xl font-heading font-bold mb-16 text-consultant-navy uppercase tracking-wider text-center">ABOUT ME</h2>
 
         <div className="flex flex-col lg:flex-row gap-12 items-start mb-16">
-          <div className="lg:w-1/3 flex justify-center">
-            <img 
-              alt="Didzis Piļāns - Business Transformation Expert" 
-              src="/lovable-uploads/ce7ccd9d-0759-40df-8d35-f2e7b7c04cc8.jpg" 
-              className="rounded-lg shadow-xl max-w-sm w-full object-cover" 
-            />
-          </div>
-          
-          <div className="lg:w-2/3 space-y-6">
-            <p className="text-lg text-consultant-gray-800 mb-6">
-              With more than two decades of leadership experience across Europe and industries like manufacturing, construction, food, and apparel, I specialize in turning complexity into clarity.
-            </p>
-            <p className="text-lg text-consultant-gray-800 mb-6">
-              With over 20 years of leadership experience across Europe, I help businesses grow through transformation, process optimization, and team development. I've led large-scale improvements at Livonia Print and ITAB Latvia, introducing certified systems and cultural change that boosted efficiency and reduced costs. Earlier, I helped transform Spectre Latvia into one of Europe's leading functional clothing manufacturers, and at Aerodium, I managed international R&D and high-profile installations across the globe. My work blends strategic vision with hands-on execution — backed by an MBA, Lean and Six Sigma certifications.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-col lg:flex-row gap-12">
-          <div className="lg:w-2/3 space-y-8">
+          <div className="lg:w-1/3 space-y-8">
+            <div className="flex justify-center">
+              <img 
+                alt="Didzis Piļāns - Business Transformation Expert" 
+                src="/lovable-uploads/ce7ccd9d-0759-40df-8d35-f2e7b7c04cc8.jpg" 
+                className="rounded-lg shadow-xl max-w-sm w-full object-cover" 
+              />
+            </div>
+            
             <Card className="bg-white shadow-lg border-l-4 border-consultant-navy">
               <CardContent className="pt-6">
                 <h3 className="text-xl font-bold text-consultant-navy mb-6">CREDENTIALS:</h3>
@@ -102,36 +91,49 @@ const AboutSection = () => {
                 </ul>
               </CardContent>
             </Card>
+          </div>
+          
+          <div className="lg:w-2/3 space-y-6">
+            <p className="text-lg text-consultant-gray-800 mb-6">
+              With more than two decades of leadership experience across Europe and industries like manufacturing, construction, food, and apparel, I specialize in turning complexity into clarity.
+            </p>
+            <p className="text-lg text-consultant-gray-800 mb-6">
+              With over 20 years of leadership experience across Europe, I help businesses grow through transformation, process optimization, and team development. I've led large-scale improvements at Livonia Print and ITAB Latvia, introducing certified systems and cultural change that boosted efficiency and reduced costs. Earlier, I helped transform Spectre Latvia into one of Europe's leading functional clothing manufacturers, and at Aerodium, I managed international R&D and high-profile installations across the globe. My work blends strategic vision with hands-on execution — backed by an MBA, Lean and Six Sigma certifications.
+            </p>
+          </div>
+        </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-consultant-navy mb-8">KEY STRENGTHS</h3>
-              <div className="space-y-6">
-                {keyStrengths.map((strength, index) => (
-                  <div key={index} className="pb-6 border-b border-gray-200 last:border-b-0">
-                    <div className="flex items-center justify-between mb-2">
-                      <h4 className="font-bold text-consultant-navy text-lg">{strength.title}</h4>
-                      <button
-                        onClick={() => toggleStrength(index)}
-                        className="text-consultant-navy hover:text-consultant-navy/70 transition-colors"
-                      >
-                        {expandedStrengths.includes(index) ? (
-                          <ChevronUp className="h-5 w-5" />
-                        ) : (
-                          <ChevronDown className="h-5 w-5" />
-                        )}
-                      </button>
+        <div className="flex justify-center">
+          <div className="max-w-4xl w-full">
+            <h3 className="text-2xl font-bold text-consultant-navy mb-8 text-center">KEY STRENGTHS</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {keyStrengths.map((strength, index) => (
+                <div key={index} className="pb-6 border-b border-gray-200">
+                  <div className="flex items-start justify-between mb-2">
+                    <div className="flex-1">
+                      <h4 className="font-bold text-consultant-navy text-lg mb-2">{strength.title}</h4>
+                      <p className="text-consultant-gray-700 mb-3">{strength.description}</p>
                     </div>
-                    <p className="text-consultant-gray-700 mb-3">{strength.description}</p>
-                    {expandedStrengths.includes(index) && (
-                      <div className="space-y-2 text-consultant-gray-700">
-                        {strength.details.map((detail, detailIndex) => (
-                          <p key={detailIndex} className="text-sm leading-relaxed">• {detail}</p>
-                        ))}
-                      </div>
-                    )}
+                    <button
+                      onClick={() => toggleStrength(index)}
+                      className="text-consultant-navy hover:text-consultant-navy/70 transition-colors ml-3 mt-1"
+                    >
+                      {expandedStrengths.includes(index) ? (
+                        <ChevronUp className="h-5 w-5" />
+                      ) : (
+                        <ChevronDown className="h-5 w-5" />
+                      )}
+                    </button>
                   </div>
-                ))}
-              </div>
+                  {expandedStrengths.includes(index) && (
+                    <div className="space-y-2 text-consultant-gray-700 mt-4">
+                      {strength.details.map((detail, detailIndex) => (
+                        <p key={detailIndex} className="text-sm leading-relaxed">• {detail}</p>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </div>
