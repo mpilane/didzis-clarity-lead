@@ -34,7 +34,7 @@ const ResultsSection = () => {
       solution: "Led concept, design, and construction of Latvia's Expo pavilion from scratch",
       impact: "Created the most visited Latvian pavilion in Expo history, representing the nation on a global stage",
       icon: <Globe size={40} className="text-consultant-blue-500" />,
-      logo: null
+      logo: "/lovable-uploads/ceb65e96-9468-4bd6-9171-644a72d13527.png"
     },
     {
       company: "ITAB Latvia",
@@ -42,7 +42,7 @@ const ResultsSection = () => {
       solution: "Implemented new management systems, introduced KPIs, and decentralized decision-making",
       impact: "Raised customer service levels from 55% to 95% and established a culture of continuous improvement",
       icon: <Users size={40} className="text-consultant-blue-500" />,
-      logo: null
+      logo: "/lovable-uploads/07c0df81-1b09-409c-80b0-fdd718614ae7.png"
     },
     {
       company: "European Lingerie Group",
@@ -50,14 +50,14 @@ const ResultsSection = () => {
       solution: "Built a new unit from scratch, led production and sales, and expanded brand portfolio by 50%",
       impact: "Reached €3M in annual contracts and successfully acquired a garment manufacturer in Belarus",
       icon: <Building size={40} className="text-consultant-blue-500" />,
-      logo: null
+      logo: "/lovable-uploads/3f2f6533-01fb-4e08-bfda-44ceddd7bf8f.png"
     }
   ];
   
   return (
-    <section id="results" className="py-20 bg-white">
+    <section id="results" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="section-heading text-center mb-16 uppercase text-black">SUCCESS STORIES</h2>
+        <h2 className="text-4xl md:text-5xl font-heading font-bold mb-16 text-consultant-navy uppercase tracking-wider text-center">SUCCESS STORIES</h2>
 
         <div className="relative max-w-7xl mx-auto">
           <Carousel
@@ -106,9 +106,16 @@ const ResultsSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
           </Carousel>
+          
+          {/* Scroll indicators */}
+          <div className="flex justify-center mt-8 space-x-2">
+            {results.map((_, index) => (
+              <div key={index} className="w-2 h-2 bg-consultant-gray-300 rounded-full"></div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
