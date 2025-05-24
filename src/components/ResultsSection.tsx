@@ -26,19 +26,19 @@ const ResultsSection = () => {
   }];
   
   return (
-    <section id="results" className="py-20 bg-consultant-navy-50">
+    <section id="results" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="section-heading text-center mb-16 uppercase text-black">SUCCESS STORIES</h2>
+        <h2 className="section-heading text-center mb-16 uppercase text-black text-5xl md:text-6xl">SUCCESS STORIES</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {results.map((result, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-all duration-300">
+            <div key={index} className="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-all duration-300 border border-gray-100">
               <div className="flex justify-between items-center mb-6">
                 <div className="flex flex-col items-center">
-                  <div className="h-24 w-40 flex items-center justify-center mb-2">
+                  <div className="h-28 w-48 flex items-center justify-center mb-2">
                     <img src={result.logo} alt={`${result.company} logo`} className="max-h-full max-w-full object-contain" />
                   </div>
-                  <p className="text-xs font-medium text-consultant-gray-500">{result.company}</p>
+                  <p className="text-sm font-medium text-consultant-gray-500">{result.company}</p>
                 </div>
                 {result.icon}
               </div>
