@@ -10,9 +10,15 @@ const CtaSection = () => {
           Whether you're scaling, restructuring, or improving your team's effectiveness, 
           I'm here to help you move forward with clarity and confidence.
         </p>
-        <Button className="bg-white text-consultant-navy hover:bg-consultant-gray-100 py-6 px-10 text-lg">
-          Let's Connect
-        </Button>
+        <a 
+          href="https://www.linkedin.com/in/didzis-pilans" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <Button className="bg-white text-consultant-navy hover:bg-consultant-gray-100 py-6 px-10 text-lg">
+            Let's Connect
+          </Button>
+        </a>
       </div>
     </section>
   );
