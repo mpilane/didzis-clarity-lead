@@ -5,7 +5,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <Avatar className="h-24 w-24 mb-8 mx-auto">
-            <AvatarImage src="/lovable-uploads/4fba1ee1-3b7d-4df7-b920-858e2a8c3b43.png" alt="Didzis Piļāns" className="object-cover" />
+            <AvatarImage alt="Didzis Piļāns" className="object-cover" src="/lovable-uploads/4ef2a845-94cf-4ec3-820c-ede23f3aa62a.png" />
             <AvatarFallback>DP</AvatarFallback>
           </Avatar>
           
