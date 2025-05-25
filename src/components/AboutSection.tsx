@@ -32,8 +32,10 @@ const AboutSection = () => {
           </div>
           
           <div className="lg:w-2/3 space-y-6">
-            
-            <p className="text-lg text-consultant-gray-800 mb-6 text-justify">With over 20 years of experience in business leadership and operational management, I’ve led transformation, process optimization, and team development across diverse industries - from manufacturing and food production to apparel and construction. I specialize in turning complexity into clarity.
+            <p className="text-lg text-consultant-gray-800 mb-6">With more than 20 years of leadership experience across Europe and industries like manufacturing, construction, food, and apparel, I specialize in turning complexity into clarity.</p>
+            <p className="text-lg text-consultant-gray-800 mb-6">With over 20 years of experience in business leadership and operational management, I’ve led transformation, process optimization, and team development across diverse industries - from manufacturing and food production to apparel and construction.
+
+
 
 
 My career spans both startups and international companies, including Livonia Print, ITAB Latvia, Spectre, and Aerodium, where I’ve delivered measurable improvements in efficiency, culture, and growth.</p>
