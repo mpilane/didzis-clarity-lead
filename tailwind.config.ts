@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -53,10 +52,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Custom consultant brand colors with dark blue tones
+				// Custom consultant brand colors with lighter dark blue tones
 				consultant: {
 					navy: {
-						DEFAULT: '#0F172A',  // Default navy
+						DEFAULT: '#1E3A8A',  // Changed to a lighter dark blue
 						50: '#F8FAFC',       // Lightest navy
 						100: '#F1F5F9',      // Very light navy
 						200: '#E2E8F0',      // Light navy
@@ -66,7 +65,19 @@ export default {
 						600: '#475569',      // Medium-dark navy
 						700: '#334155',      // Dark navy
 						800: '#1E293B',      // Very dark navy
-						900: '#0F172A',      // Darkest navy
+						900: '#1E3A8A',      // Changed to match default
+					},
+					blue: {
+						50: '#EFF6FF',
+						100: '#DBEAFE',
+						200: '#BFDBFE',
+						300: '#93C5FD',
+						400: '#60A5FA',
+						500: '#3B82F6',
+						600: '#2563EB',
+						700: '#1D4ED8',
+						800: '#1E40AF',
+						900: '#1E3A8A',
 					},
 					gray: {
 						50: '#F9FAFB',
