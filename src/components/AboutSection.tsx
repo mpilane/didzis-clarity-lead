@@ -1,6 +1,5 @@
 
 import { Award, CheckCheck, Target, ChevronDown, ChevronUp } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
 
 const AboutSection = () => {
@@ -59,38 +58,12 @@ const AboutSection = () => {
         <h2 className="text-3xl md:text-4xl font-heading font-bold mb-16 text-consultant-navy uppercase tracking-wider text-center">ABOUT ME</h2>
 
         <div className="flex flex-col lg:flex-row gap-12 items-start mb-16">
-          <div className="lg:w-1/3 space-y-8">
-            <div className="flex justify-center">
-              <img 
-                alt="Didzis Piļāns - Business Transformation Expert" 
-                src="/lovable-uploads/ce7ccd9d-0759-40df-8d35-f2e7b7c04cc8.jpg" 
-                className="rounded-lg shadow-xl max-w-sm w-full object-cover" 
-              />
-            </div>
-            
-            <Card className="bg-white shadow-lg border-l-4 border-consultant-navy">
-              <CardContent className="pt-6">
-                <h3 className="text-xl font-bold text-consultant-navy mb-6">CREDENTIALS:</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-center">
-                    <Award className="text-consultant-navy mr-3" size={24} />
-                    <span className="text-lg text-consultant-gray-700">Professional MBA</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCheck className="text-consultant-navy mr-3" size={24} />
-                    <span className="text-lg text-consultant-gray-700">Lean Expert</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCheck className="text-consultant-navy mr-3" size={24} />
-                    <span className="text-lg text-consultant-gray-700">Six Sigma Green Belt</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Target className="text-consultant-navy mr-3" size={24} />
-                    <span className="text-lg text-consultant-gray-700">Certified Google Project Manager</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+          <div className="lg:w-1/3 flex justify-center">
+            <img 
+              alt="Didzis Piļāns - Business Transformation Expert" 
+              src="/lovable-uploads/ce7ccd9d-0759-40df-8d35-f2e7b7c04cc8.jpg" 
+              className="rounded-lg shadow-xl max-w-sm w-full object-cover" 
+            />
           </div>
           
           <div className="lg:w-2/3 space-y-6">
@@ -98,7 +71,33 @@ const AboutSection = () => {
               With more than two decades of leadership experience across Europe and industries like manufacturing, construction, food, and apparel, I specialize in turning complexity into clarity.
             </p>
             <p className="text-lg text-consultant-gray-800 mb-6">
-              With over 20 years of leadership experience across Europe, I help businesses grow through transformation, process optimization, and team development. I've led large-scale improvements at Livonia Print and ITAB Latvia, introducing certified systems and cultural change that boosted efficiency and reduced costs. Earlier, I helped transform Spectre Latvia into one of Europe's leading functional clothing manufacturers, and at Aerodium, I managed international R&D and high-profile installations across the globe. My work blends strategic vision with hands-on execution — backed by an MBA, Lean and Six Sigma certifications.
+              With over 20 years of leadership experience across Europe, I help businesses grow through transformation, process optimization, and team development. I've led large-scale improvements at Livonia Print and ITAB Latvia, introducing certified systems and cultural change that boosted efficiency and reduced costs. Earlier, I helped transform Spectre Latvia into one of Europe's leading functional clothing manufacturers, and at Aerodium, I managed international R&D and high-profile installations across the globe.
+            </p>
+            
+            <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-consultant-navy">
+              <h3 className="text-xl font-bold text-consultant-navy mb-4">CREDENTIALS:</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex items-center">
+                  <Award className="text-consultant-navy mr-3" size={20} />
+                  <span className="text-consultant-gray-700">Professional MBA</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCheck className="text-consultant-navy mr-3" size={20} />
+                  <span className="text-consultant-gray-700">Lean Expert</span>
+                </div>
+                <div className="flex items-center">
+                  <CheckCheck className="text-consultant-navy mr-3" size={20} />
+                  <span className="text-consultant-gray-700">Six Sigma Green Belt</span>
+                </div>
+                <div className="flex items-center">
+                  <Target className="text-consultant-navy mr-3" size={20} />
+                  <span className="text-consultant-gray-700">Certified Google Project Manager</span>
+                </div>
+              </div>
+            </div>
+            
+            <p className="text-lg text-consultant-gray-800">
+              My work blends strategic vision with hands-on execution — backed by an MBA, Lean and Six Sigma certifications.
             </p>
           </div>
         </div>
