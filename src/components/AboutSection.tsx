@@ -37,21 +37,25 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-heading font-bold mb-16 text-consultant-navy uppercase tracking-wider text-center md:text-5xl">ABOUT ME</h2>
 
-        <div className="flex flex-col lg:flex-row gap-12 items-start mb-16">
-          <div className="lg:w-1/3 flex justify-center">
-            <img alt="Didzis Piļāns - Business Transformation Expert" src="/lovable-uploads/ce7ccd9d-0759-40df-8d35-f2e7b7c04cc8.jpg" className="rounded-lg shadow-xl max-w-sm w-full object-cover" />
-          </div>
-          
-          <div className="lg:w-2/3 space-y-6">
-            <p className="text-lg text-consultant-gray-800 mb-6">With more than 20 years of leadership experience across Europe and industries like manufacturing, construction, food, and apparel, I specialize in turning complexity into clarity.</p>
-            
-            <p className="text-lg text-consultant-gray-800 mb-6">With over 20 years of experience in business leadership and operational management, I've led transformation, process optimization, and team development across diverse industries - from manufacturing and food production to apparel and construction.</p>
-            
-            <p className="text-lg text-consultant-gray-800 mb-6">My career spans both startups and international companies, including Livonia Print, ITAB Latvia, Spectre, and Aerodium, where I've delivered measurable improvements in efficiency, culture, and growth.</p>
-            
-            <p className="text-lg text-consultant-gray-800">
-              My work blends strategic vision with hands-on execution — backed by a Professional MBA, Lean Expert certification, Six Sigma Green Belt, and Google Project Manager certification.
-            </p>
+        <div className="flex justify-center mb-16">
+          <div className="max-w-4xl w-full">
+            <div className="flex flex-col lg:flex-row gap-12 items-start">
+              <div className="lg:w-1/3 flex justify-center">
+                <img alt="Didzis Piļāns - Business Transformation Expert" src="/lovable-uploads/ce7ccd9d-0759-40df-8d35-f2e7b7c04cc8.jpg" className="rounded-lg shadow-xl max-w-sm w-full object-cover" />
+              </div>
+              
+              <div className="lg:w-2/3 space-y-6">
+                <p className="text-lg text-consultant-gray-800 mb-6">With more than 20 years of leadership experience across Europe and industries like manufacturing, construction, food, and apparel, I specialize in turning complexity into clarity.</p>
+                
+                <p className="text-lg text-consultant-gray-800 mb-6">With over 20 years of experience in business leadership and operational management, I've led transformation, process optimization, and team development across diverse industries - from manufacturing and food production to apparel and construction.</p>
+                
+                <p className="text-lg text-consultant-gray-800 mb-6">My career spans both startups and international companies, including Livonia Print, ITAB Latvia, Spectre, and Aerodium, where I've delivered measurable improvements in efficiency, culture, and growth.</p>
+                
+                <p className="text-lg text-consultant-gray-800">
+                  My work blends strategic vision with hands-on execution — backed by a Professional MBA, Lean Expert certification, Six Sigma Green Belt, and Google Project Manager certification.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
