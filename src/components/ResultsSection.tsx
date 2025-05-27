@@ -62,13 +62,22 @@ const ResultsSection = () => {
   useEffect(() => {
     if (!emblaApi) return;
 
-    emblaApi.on('select', () => {
+    const onSelect = () => {
       setSelectedIndex(emblaApi.selectedScrollSnap());
-    });
+    };
+
+    emblaApi.on('select', onSelect);
+    onSelect(); // Set initial state
+
+    return () => {
+      emblaApi.off('select', onSelect);
+    };
   }, [emblaApi]);
 
   const scrollTo = (index: number) => {
-    if (emblaApi) emblaApi.scrollTo(index);
+    if (emblaApi) {
+      emblaApi.scrollTo(index);
+    }
   };
 
   return (
@@ -77,10 +86,10 @@ const ResultsSection = () => {
         <h2 className="text-4xl font-heading font-bold mb-16 text-consultant-navy uppercase tracking-wider text-center md:text-5xl">SUCCESS STORIES</h2>
 
         <div className="relative max-w-7xl mx-auto">
-          <Carousel opts={{ align: "start", loop: true }} className="w-full">
-            <CarouselContent className="-ml-2 md:-ml-4">
+          <div ref={emblaRef} className="overflow-hidden">
+            <div className="flex -ml-2 md:-ml-4">
               {results.map((result, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                <div key={index} className="pl-2 md:pl-4 flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0">
                   <div className="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-all duration-300 border border-gray-100 h-full">
                     <div className="flex justify-between items-center mb-6">
                       <div className="flex flex-col items-center">
@@ -112,12 +121,31 @@ const ResultsSection = () => {
                       </div>
                     </div>
                   </div>
-                </CarouselItem>
+                </div>
               ))}
-            </CarouselContent>
-            <CarouselPrevious className="left-2 md:left-4" />
-            <CarouselNext className="right-2 md:right-4" />
-          </Carousel>
+            </div>
+          </div>
+          
+          {/* Navigation buttons with better mobile positioning */}
+          <button
+            onClick={() => emblaApi?.scrollPrev()}
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white rounded-full shadow-md p-2 hover:shadow-lg transition-shadow z-10"
+            aria-label="Previous slide"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          
+          <button
+            onClick={() => emblaApi?.scrollNext()}
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white rounded-full shadow-md p-2 hover:shadow-lg transition-shadow z-10"
+            aria-label="Next slide"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
           
           {/* Interactive scroll indicators */}
           <div className="flex justify-center mt-8 space-x-2">
@@ -126,7 +154,7 @@ const ResultsSection = () => {
                 key={index}
                 onClick={() => scrollTo(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === selectedIndex ? 'bg-consultant-blue-500' : 'bg-consultant-gray-300'
+                  index === selectedIndex ? 'bg-consultant-navy' : 'bg-consultant-gray-300'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
