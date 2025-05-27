@@ -1,3 +1,4 @@
+
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 const AboutSection = () => {
@@ -24,7 +25,7 @@ const AboutSection = () => {
   }];
   return <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-heading font-bold mb-16 text-consultant-navy uppercase tracking-wider text-center md:text-5xl">ABOUT ME</h2>
+        <h2 className="text-5xl font-heading font-bold mb-16 text-consultant-navy uppercase tracking-wider text-center">ABOUT ME</h2>
 
         <div className="flex justify-center mb-16">
           <div className="max-w-4xl w-full">
@@ -34,13 +35,11 @@ const AboutSection = () => {
               </div>
               
               <div className="lg:w-2/3 space-y-6">
-                <p className="text-lg text-consultant-gray-800 mb-6">With more than 20 years of leadership experience across Europe and industries like manufacturing, construction, food, and apparel, I specialize in turning complexity into clarity.</p>
-                
                 <p className="text-lg text-consultant-gray-800 mb-6">With over 20 years of experience in business leadership and operational management, I've led transformation, process optimization, and team development across diverse industries - from manufacturing and food production to apparel and construction.</p>
                 
                 <p className="text-lg text-consultant-gray-800 mb-6">My career spans both startups and international companies, including Aerodium, Spectre, Livonia Print and ITAB Latvia, Spectre, and Aerodium, where I've delivered measurable improvements in efficiency, culture, and growth.</p>
                 
-                <p className="text-lg text-consultant-gray-800">My work blends strategic vision with hands-on execution –  backed by a Professional MBA, Lean Expert certification, Six Sigma Green Belt, and Google Project Manager certification.</p>
+                <p className="text-lg text-consultant-gray-800">My work blends strategic vision with hands-on execution –  backed by a Professional MBA, Lean Expert certification, Six Sigma Green Belt, and Google Project Manager certification.</p>
               </div>
             </div>
           </div>
