@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { List, X } from "lucide-react";
 import LanguageToggle from "./LanguageToggle";
 import { translations } from "@/data/translations";
@@ -59,12 +58,6 @@ const Navbar = ({ currentLanguage, onLanguageChange }: NavbarProps) => {
             currentLanguage={currentLanguage} 
             onLanguageChange={onLanguageChange} 
           />
-          <Button 
-            className="bg-consultant-navy hover:bg-consultant-navy/90 transition-colors"
-            onClick={() => window.open('https://linkedin.com/in/didzis-pilans', '_blank')}
-          >
-            {t.navbar.letsTalk}
-          </Button>
         </div>
 
         {/* Mobile menu */}
@@ -82,15 +75,6 @@ const Navbar = ({ currentLanguage, onLanguageChange }: NavbarProps) => {
             <a href="#contact" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
               {t.navbar.contact}
             </a>
-            <Button 
-              className="bg-consultant-navy hover:bg-consultant-navy/90 transition-colors"
-              onClick={() => {
-                window.open('https://linkedin.com/in/didzis-pilans', '_blank');
-                handleLinkClick();
-              }}
-            >
-              {t.navbar.letsTalk}
-            </Button>
           </div>
         )}
       </div>

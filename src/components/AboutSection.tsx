@@ -13,24 +13,26 @@ const AboutSection = ({ currentLanguage }: AboutSectionProps) => {
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-heading font-bold mb-16 text-consultant-navy uppercase tracking-wider text-center">{t.about.title}</h2>
 
-        <div className="flex justify-center mb-16">
-          <div className="max-w-4xl w-full">
-            <div className="relative">
-              <img 
-                alt="Didzis Piļāns - Business Transformation Expert" 
-                src="/lovable-uploads/ce7ccd9d-0759-40df-8d35-f2e7b7c04cc8.jpg" 
-                className="float-left mr-8 mb-6 rounded-lg shadow-xl w-80 h-auto object-cover" 
-              />
-              
-              <div className="text-content">
-                <p className="text-lg text-consultant-gray-800 mb-6 italic font-medium">{t.about.quote}</p>
-                
-                {t.about.content.map((paragraph, index) => (
-                  <p key={index} className="text-lg text-consultant-gray-800 mb-6">{paragraph}</p>
-                ))}
-              </div>
-            </div>
-          </div>
+        <div className="flex justify-center mb-12">
+          <img 
+            alt="Didzis Piļāns - Business Transformation Expert" 
+            src="/lovable-uploads/ce7ccd9d-0759-40df-8d35-f2e7b7c04cc8.jpg" 
+            className="rounded-lg shadow-xl w-80 h-auto object-cover" 
+          />
+        </div>
+
+        <div className="max-w-4xl mx-auto text-center mb-8">
+          <p className="text-xl text-consultant-gray-800 mb-4 italic font-medium">{t.about.quote}</p>
+          <p className="text-lg text-consultant-gray-600 font-medium">
+            Didzis Piļāns<br />
+            {currentLanguage === 'lv' ? 'Biznesa transformācijas un efektivitātes konsultants' : 'Business Transformation Expert'}
+          </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto">
+          {t.about.content.map((paragraph, index) => (
+            <p key={index} className="text-lg text-consultant-gray-800 mb-6 text-left">{paragraph}</p>
+          ))}
         </div>
       </div>
     </section>
