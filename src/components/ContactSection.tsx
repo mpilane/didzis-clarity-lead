@@ -1,7 +1,17 @@
+
 import { Phone, Mail, Linkedin } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-const ContactSection = () => {
-  return <section id="contact" className="py-20 bg-white">
+import { translations } from "@/data/translations";
+
+interface ContactSectionProps {
+  currentLanguage: string;
+}
+
+const ContactSection = ({ currentLanguage }: ContactSectionProps) => {
+  const t = translations[currentLanguage as keyof typeof translations];
+
+  return (
+    <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <Avatar className="h-24 w-24 mb-8 mx-auto">
@@ -9,8 +19,8 @@ const ContactSection = () => {
             <AvatarFallback>DP</AvatarFallback>
           </Avatar>
           
-          <h2 className="text-3xl font-bold mb-8">Didzis Piļāns</h2>
-          <p className="text-xl font-medium text-consultant-gray-700 mb-10">Business Consultant</p>
+          <h2 className="text-3xl font-bold mb-8">{t.contact.title}</h2>
+          <p className="text-xl font-medium text-consultant-gray-700 mb-10">{t.contact.subtitle}</p>
           
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
             <a href="tel:+37129448407" className="flex items-center gap-3 text-consultant-gray-700 hover:text-consultant-navy transition-colors">
@@ -30,6 +40,8 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ContactSection;

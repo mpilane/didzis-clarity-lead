@@ -1,16 +1,23 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, User } from "lucide-react";
+import { translations } from "@/data/translations";
 
-const ContactForm = () => {
+interface ContactFormProps {
+  currentLanguage: string;
+}
+
+const ContactForm = ({ currentLanguage }: ContactFormProps) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const t = translations[currentLanguage as keyof typeof translations];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -46,9 +53,9 @@ ${formData.message}
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-consultant-navy">Get In Touch</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-consultant-navy">{t.contactForm.title}</h2>
             <p className="text-lg text-consultant-gray-700">
-              Ready to transform your business? Send me a message and let's discuss how we can work together.
+              {t.contactForm.description}
             </p>
           </div>
 
@@ -57,7 +64,7 @@ ${formData.message}
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-consultant-gray-700 mb-2">
                   <User size={16} className="inline mr-2" />
-                  Name *
+                  {t.contactForm.name} *
                 </label>
                 <Input
                   type="text"
@@ -67,13 +74,13 @@ ${formData.message}
                   onChange={handleChange}
                   required
                   className="w-full"
-                  placeholder="Your full name"
+                  placeholder={t.contactForm.namePlaceholder}
                 />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-consultant-gray-700 mb-2">
                   <Mail size={16} className="inline mr-2" />
-                  Email *
+                  {t.contactForm.email} *
                 </label>
                 <Input
                   type="email"
@@ -83,14 +90,14 @@ ${formData.message}
                   onChange={handleChange}
                   required
                   className="w-full"
-                  placeholder="your.email@example.com"
+                  placeholder={t.contactForm.emailPlaceholder}
                 />
               </div>
             </div>
 
             <div className="mb-6">
               <label htmlFor="message" className="block text-sm font-medium text-consultant-gray-700 mb-2">
-                Message *
+                {t.contactForm.message} *
               </label>
               <Textarea
                 id="message"
@@ -100,7 +107,7 @@ ${formData.message}
                 required
                 rows={6}
                 className="w-full"
-                placeholder="Tell me about your business challenges and how I can help..."
+                placeholder={t.contactForm.messagePlaceholder}
               />
             </div>
 
@@ -109,7 +116,7 @@ ${formData.message}
               disabled={isSubmitting}
               className="w-full bg-consultant-navy hover:bg-consultant-navy/90 text-white py-3 text-lg"
             >
-              {isSubmitting ? "Sending..." : "Send Message"}
+              {isSubmitting ? t.contactForm.sending : t.contactForm.sendButton}
             </Button>
           </form>
         </div>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { List, X } from "lucide-react";
 import LanguageToggle from "./LanguageToggle";
+import { translations } from "@/data/translations";
 
 interface NavbarProps {
   currentLanguage: string;
@@ -11,6 +12,7 @@ interface NavbarProps {
 
 const Navbar = ({ currentLanguage, onLanguageChange }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = translations[currentLanguage as keyof typeof translations];
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -24,8 +26,8 @@ const Navbar = ({ currentLanguage, onLanguageChange }: NavbarProps) => {
     <nav className="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex flex-col">
-          <a href="#" className="text-consultant-navy font-heading font-bold text-xl">Didzis Piļāns</a>
-          <span className="text-sm text-consultant-gray-600">business consultant</span>
+          <a href="#" className="text-consultant-navy font-heading font-bold text-xl">{t.navbar.title}</a>
+          <span className="text-sm text-consultant-gray-600">{t.navbar.subtitle}</span>
         </div>
 
         {/* Mobile menu button */}
@@ -42,19 +44,19 @@ const Navbar = ({ currentLanguage, onLanguageChange }: NavbarProps) => {
         {/* Desktop menu */}
         <div className="hidden md:flex items-center space-x-8">
           <a href="#about" className="text-consultant-gray-700 hover:text-consultant-navy transition-colors">
-            About
+            {t.navbar.about}
           </a>
           <a href="#services" className="text-consultant-gray-700 hover:text-consultant-navy transition-colors">
-            Services
+            {t.navbar.services}
           </a>
           <a href="#results" className="text-consultant-gray-700 hover:text-consultant-navy transition-colors">
-            Results
+            {t.navbar.results}
           </a>
           <a href="#approach" className="text-consultant-gray-700 hover:text-consultant-navy transition-colors">
-            Approach
+            {t.navbar.approach}
           </a>
           <a href="#contact" className="text-consultant-gray-700 hover:text-consultant-navy transition-colors">
-            Contact
+            {t.navbar.contact}
           </a>
           <LanguageToggle 
             currentLanguage={currentLanguage} 
@@ -64,7 +66,7 @@ const Navbar = ({ currentLanguage, onLanguageChange }: NavbarProps) => {
             className="bg-consultant-navy hover:bg-consultant-navy/90 transition-colors"
             onClick={() => window.open('https://linkedin.com/in/didzis-pilans', '_blank')}
           >
-            Let's Talk
+            {t.navbar.letsTalk}
           </Button>
         </div>
 
@@ -72,19 +74,19 @@ const Navbar = ({ currentLanguage, onLanguageChange }: NavbarProps) => {
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-md p-4 flex flex-col space-y-4">
             <a href="#about" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
-              About
+              {t.navbar.about}
             </a>
             <a href="#services" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
-              Services
+              {t.navbar.services}
             </a>
             <a href="#results" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
-              Results
+              {t.navbar.results}
             </a>
             <a href="#approach" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
-              Approach
+              {t.navbar.approach}
             </a>
             <a href="#contact" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
-              Contact
+              {t.navbar.contact}
             </a>
             <Button 
               className="bg-consultant-navy hover:bg-consultant-navy/90 transition-colors"
@@ -93,7 +95,7 @@ const Navbar = ({ currentLanguage, onLanguageChange }: NavbarProps) => {
                 handleLinkClick();
               }}
             >
-              Let's Talk
+              {t.navbar.letsTalk}
             </Button>
           </div>
         )}
