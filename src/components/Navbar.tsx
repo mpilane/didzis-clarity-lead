@@ -47,11 +47,11 @@ const Navbar = ({ currentLanguage, onLanguageChange }: NavbarProps) => {
           <a href="#services" className="text-consultant-gray-700 hover:text-consultant-navy transition-colors">
             Services
           </a>
-          <a href="#approach" className="text-consultant-gray-700 hover:text-consultant-navy transition-colors">
-            Approach
-          </a>
           <a href="#results" className="text-consultant-gray-700 hover:text-consultant-navy transition-colors">
             Results
+          </a>
+          <a href="#approach" className="text-consultant-gray-700 hover:text-consultant-navy transition-colors">
+            Approach
           </a>
           <a href="#contact" className="text-consultant-gray-700 hover:text-consultant-navy transition-colors">
             Contact
@@ -77,11 +77,11 @@ const Navbar = ({ currentLanguage, onLanguageChange }: NavbarProps) => {
             <a href="#services" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
               Services
             </a>
-            <a href="#approach" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
-              Approach
-            </a>
             <a href="#results" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
               Results
+            </a>
+            <a href="#approach" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
+              Approach
             </a>
             <a href="#contact" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
               Contact

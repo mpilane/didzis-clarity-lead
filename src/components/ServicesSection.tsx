@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 const ServicesSection = () => {
   const services = [{
@@ -35,7 +36,10 @@ const ServicesSection = () => {
         </div>
 
         <div className="text-center">
-          <Button className="bg-consultant-navy hover:bg-consultant-navy-800 text-white px-8 py-6 text-lg">
+          <Button 
+            className="bg-consultant-navy hover:bg-consultant-navy-800 text-white px-8 py-6 text-lg"
+            onClick={() => window.open('https://www.linkedin.com/in/didzis-pilans', '_blank')}
+          >
             Let's Get in Touch
           </Button>
         </div>

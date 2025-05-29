@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -51,16 +50,6 @@ ${formData.message}
             <p className="text-lg text-consultant-gray-700">
               Ready to transform your business? Send me a message and let's discuss how we can work together.
             </p>
-            <a 
-              href="https://www.linkedin.com/in/didzis-pilans" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block mt-4"
-            >
-              <Button className="bg-consultant-navy hover:bg-consultant-navy/90 text-white">
-                Let's get in touch
-              </Button>
-            </a>
           </div>
 
           <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-lg p-8">
