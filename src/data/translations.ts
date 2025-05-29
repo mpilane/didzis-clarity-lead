@@ -1,4 +1,3 @@
-
 export const translations = {
   en: {
     navbar: {
@@ -7,7 +6,6 @@ export const translations = {
       about: "About",
       services: "Services",
       results: "Results",
-      approach: "Approach",
       contact: "Contact",
       letsTalk: "Let's Talk"
     },
@@ -177,17 +175,16 @@ export const translations = {
   lv: {
     navbar: {
       title: "Didzis Piļāns",
-      subtitle: "Biznesa transformācijas un efektivitātes konsultants",
+      subtitle: "Biznesa konsultants",
       about: "Par mani",
-      services: "Ko es piedāvāju",
-      results: "Veiksmes stāsti",
-      approach: "Mana pieeja",
+      services: "Pakalpojumi",
+      results: "Rezultāti",
       contact: "Kontakti",
       letsTalk: "Sazinies ar mani"
     },
     hero: {
-      title: "Skaidrība. Virziens. Rezultāts.",
-      subtitle: "",
+      title: "Skaidrība. Virziens.",
+      subtitle: "Rezultāts.",
       description: "Ar vairāk nekā 20 gadu pieredzi dažādās nozarēs un starptautiskā vidē, palīdzu uzņēmumiem sasniegt izrāvienu – optimizējot procesus, attīstot vadības komandas un ievirzot stratēģiju skaidrā izaugsmes kursā."
     },
     about: {
@@ -252,7 +249,7 @@ export const translations = {
         },
         {
           title: "Ārējs skats no iekšpuses",
-          subtitle: "Konsultants, kas saprot uzņēmumu darbību no vadības krēsla",
+          subtitle: "Konsultants, kas saprot uzņēmumu darbību no vadības krēsla.",
           details: [
             "Atšķirībā no \"tīriem\" konsultantiem, man ir pieredze kā uzņēmuma vadītājam – zinu, kā izskatās realitāte ne tikai teorijā, bet praksē",
             "Palīdzu vadītājiem ne tikai risināt problēmas, bet arī atgriezt skaidrību un mieru haosa brīžos"

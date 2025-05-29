@@ -52,9 +52,6 @@ const Navbar = ({ currentLanguage, onLanguageChange }: NavbarProps) => {
           <a href="#results" className="text-consultant-gray-700 hover:text-consultant-navy transition-colors">
             {t.navbar.results}
           </a>
-          <a href="#approach" className="text-consultant-gray-700 hover:text-consultant-navy transition-colors">
-            {t.navbar.approach}
-          </a>
           <a href="#contact" className="text-consultant-gray-700 hover:text-consultant-navy transition-colors">
             {t.navbar.contact}
           </a>
@@ -81,9 +78,6 @@ const Navbar = ({ currentLanguage, onLanguageChange }: NavbarProps) => {
             </a>
             <a href="#results" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
               {t.navbar.results}
-            </a>
-            <a href="#approach" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
-              {t.navbar.approach}
             </a>
             <a href="#contact" className="text-consultant-gray-700 hover:text-consultant-navy p-2 transition-colors" onClick={handleLinkClick}>
               {t.navbar.contact}

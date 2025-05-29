@@ -8,20 +8,20 @@ interface LanguageToggleProps {
 
 const LanguageToggle = ({ currentLanguage, onLanguageChange }: LanguageToggleProps) => {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-1">
       <Button
-        variant={currentLanguage === 'en' ? 'default' : 'outline'}
+        variant={currentLanguage === 'en' ? 'default' : 'ghost'}
         size="sm"
         onClick={() => onLanguageChange('en')}
-        className="min-w-[50px]"
+        className="h-8 px-2 text-xs font-medium"
       >
         EN
       </Button>
       <Button
-        variant={currentLanguage === 'lv' ? 'default' : 'outline'}
+        variant={currentLanguage === 'lv' ? 'default' : 'ghost'}
         size="sm"
         onClick={() => onLanguageChange('lv')}
-        className="min-w-[50px]"
+        className="h-8 px-2 text-xs font-medium"
       >
         LV
       </Button>
