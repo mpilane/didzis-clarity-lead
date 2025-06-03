@@ -1,9 +1,8 @@
-
 export const translations = {
   en: {
     navbar: {
       title: "Didzis Piļāns",
-      subtitle: "business consultant",
+      subtitle: "business transformation consultant",
       about: "About",
       services: "Services",
       results: "Results",
@@ -178,7 +177,7 @@ export const translations = {
     },
     contact: {
       title: "Didzis Piļāns",
-      subtitle: "Business Consultant"
+      subtitle: "Business Transformation Consultant"
     },
     contactForm: {
       title: "Get In Touch",
@@ -196,7 +195,7 @@ export const translations = {
   lv: {
     navbar: {
       title: "Didzis Piļāns",
-      subtitle: "Biznesa konsultants",
+      subtitle: "Biznesa pārmaiņu konsultants",
       about: "Par mani",
       services: "Pakalpojumi",
       results: "Rezultāti",
@@ -227,7 +226,7 @@ export const translations = {
           title: "Biznesa transformācija",
           subtitle: "Pārstrukturēšana, efektivitātes celšana, ilgtspējīgas izaugsmes stratēģija",
           details: [
-            "Palīdzu uzņēmumiem sakārtot procesus, struktūras un pārvaldības modeli, lai veicinātu ilgtspējīgu rentabilitāti",
+            "Palīdzu uzņēmumiem sakārtot procesus, struktūras un pārvaldības modeli, lai veicinātu ilgtspējigu rentabilitāti",
             "Pieredze gan ar krīzes situācijām (piemēram, zaudējoši uzņēmumi), gan ar uzņēmumiem, kas gatavi nākamajam attīstības posmam",
             "Piemērs: Spectre Latvia – +20% efektivitāte un rentabilitāte divu gadu laikā"
           ]
@@ -359,7 +358,7 @@ export const translations = {
         },
         {
           number: "04",
-          title: "Ilgtspējīga attīstība",
+8 title: "Ilgtspējīga attīstība",
           description: "Sistēmas, kas paliek un attīstās arī bez ārēja atbalsta"
         }
       ]
