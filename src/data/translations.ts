@@ -1,3 +1,4 @@
+
 export const translations = {
   en: {
     navbar: {
@@ -86,6 +87,8 @@ export const translations = {
     },
     results: {
       title: "SUCCESS STORIES",
+      recommendationsTitle: "RECOMMENDATIONS",
+      readFullText: "read full recommendation",
       items: [
         {
           company: "Spectre Latvia",
@@ -122,6 +125,24 @@ export const translations = {
           challenge: "No existing business unit for ready-made garments",
           solution: "Built a new unit from scratch, led production and sales, and expanded brand portfolio by 50%",
           impact: "Reached €3M in annual contracts and successfully acquired a garment manufacturer in Belarus"
+        }
+      ],
+      recommendations: [
+        {
+          quote: "Didzis is a transformational leader who fosters strong teams",
+          author: "Guna Gaile"
+        },
+        {
+          quote: "'A doer', who efficiently implement solutions for a better future",
+          author: "Knut Kvisvik"
+        },
+        {
+          quote: "I am fascinated by energy of Didzis, how powerful he sees the vision of company and his ability to move towards",
+          author: "Valdis Vanags"
+        },
+        {
+          quote: "An excellent couch who helps his managers to acquire needed skills to be able to reach defined goals as well as involve their staff in path to business and process improvement",
+          author: "Dzintars Putnis"
         }
       ]
     },
@@ -259,6 +280,8 @@ export const translations = {
     },
     results: {
       title: "VEIKSMES STĀSTI",
+      recommendationsTitle: "ATSAUKSMES",
+      readFullText: "lasīt pilnu atsauksmi",
       items: [
         {
           company: "Spectre Latvia",
@@ -295,6 +318,24 @@ export const translations = {
           challenge: "Neesoša gatavu apģērbu ražošanas struktūrvienības",
           solution: "Izveidota jauna struktūrvienība, vadīta ražošana un pārdošana, paplašināts zīmolu portfelis par 50%",
           impact: "Noslēgti līgumi €3M vērtībā gadā un iegādāts apģērbu ražotājs Baltkrievijā"
+        }
+      ],
+      recommendations: [
+        {
+          quote: "Didzis ir pārmaiņu līderis, kurš spēj veidot un attīstīt saliedētas un spēcīgas komandas.",
+          author: "Guna Gaile"
+        },
+        {
+          quote: "Harizmātisks darītājs ar nestandarta domāšanu, kurš efektīvi ievieš risinājumus labākai nākotnei.",
+          author: "Knut Kvisvik"
+        },
+        {
+          quote: "Didža enerģija un spēja skaidri saredzēt uzņēmuma vīziju un neatlaidīgi virzīties tās virzienā iedvesmo.",
+          author: "Valdis Vanags"
+        },
+        {
+          quote: "Izcils koučs, kurš palīdz vadītājiem attīstīt prasmes mērķu sasniegšanai un iedvesmo komandas iesaistīties uzņēmuma un procesu attīstībā.",
+          author: "Dzintars Putnis"
         }
       ]
     },

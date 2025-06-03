@@ -57,7 +57,7 @@ const ResultsSection = ({ currentLanguage }: ResultsSectionProps) => {
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-heading font-bold mb-16 text-consultant-navy uppercase tracking-wider text-center">{t.results.title}</h2>
 
-        <div className="relative max-w-7xl mx-auto">
+        <div className="relative max-w-7xl mx-auto mb-20">
           <div ref={emblaRef} className="overflow-hidden">
             <div className="flex -ml-2 md:-ml-4">
               {t.results.items.map((result, index) => (
@@ -95,7 +95,7 @@ const ResultsSection = ({ currentLanguage }: ResultsSectionProps) => {
                         <p className="text-sm font-medium text-consultant-gray-500">
                           {currentLanguage === 'lv' ? 'Rezultāts:' : 'Impact:'}
                         </p>
-                        <p className="font-medium text-consultant-navy">{result.impact}</p>
+                        <p className="font-medium text-consultant-blue-500">{result.impact}</p>
                       </div>
                     </div>
                   </div>
@@ -136,6 +136,32 @@ const ResultsSection = ({ currentLanguage }: ResultsSectionProps) => {
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
+            ))}
+          </div>
+        </div>
+
+        {/* Recommendations Section */}
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-3xl font-heading font-bold mb-12 text-consultant-navy uppercase tracking-wider text-center">{t.results.recommendationsTitle}</h3>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {t.results.recommendations.map((recommendation, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                <blockquote className="text-lg text-consultant-gray-800 mb-4 italic">
+                  "{recommendation.quote}"
+                </blockquote>
+                <div className="flex justify-between items-center">
+                  <cite className="text-consultant-navy font-medium not-italic">{recommendation.author}</cite>
+                  <a 
+                    href="https://www.linkedin.com/in/didzis-pilans/details/recommendations/?detailScreenTabIndex=0" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-consultant-blue-500 text-sm hover:underline"
+                  >
+                    {t.results.readFullText}
+                  </a>
+                </div>
+              </div>
             ))}
           </div>
         </div>

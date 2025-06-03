@@ -1,3 +1,4 @@
+
 import { translations } from "@/data/translations";
 interface AboutSectionProps {
   currentLanguage: string;
@@ -14,16 +15,16 @@ const AboutSection = ({
           <img alt="Didzis Piļāns - Business Transformation Expert" src="/lovable-uploads/ce7ccd9d-0759-40df-8d35-f2e7b7c04cc8.jpg" className="rounded-lg shadow-xl w-80 h-auto object-cover" />
         </div>
 
-        <div className="max-w-4xl mx-auto text-center mb-8">
-          <p className="text-consultant-gray-800 mb-4 italic font-medium text-2xl">{t.about.quote}</p>
-          <p className="text-consultant-gray-600 text-center text-lg font-medium">
-            Didzis Piļāns<br />
-            {currentLanguage === 'lv' ? 'Biznesa transformācijas un efektivitātes konsultants' : 'Business Transformation Expert'}
-          </p>
-        </div>
-
         <div className="max-w-4xl mx-auto">
-          {t.about.content.map((paragraph, index) => <p key={index} className="text-lg text-consultant-gray-800 mb-6 text-left">{paragraph}</p>)}
+          <p className="text-lg text-consultant-gray-800 mb-6 text-left">{t.about.content[0]}</p>
+          <p className="text-lg text-consultant-gray-800 mb-6 text-left">{t.about.content[1]}</p>
+          
+          <div className="max-w-4xl mx-auto text-center mb-8">
+            <p className="text-consultant-gray-800 mb-4 italic font-medium text-2xl">{t.about.quote}</p>
+          </div>
+
+          <p className="text-lg text-consultant-gray-800 mb-6 text-left">{t.about.content[2]}</p>
+          <p className="text-lg text-consultant-gray-800 mb-6 text-left">{t.about.content[3]}</p>
         </div>
       </div>
     </section>;
