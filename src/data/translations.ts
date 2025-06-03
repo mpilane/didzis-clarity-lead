@@ -358,7 +358,7 @@ export const translations = {
         },
         {
           number: "04",
-8 title: "Ilgtspējīga attīstība",
+          title: "Ilgtspējīga attīstība",
           description: "Sistēmas, kas paliek un attīstās arī bez ārēja atbalsta"
         }
       ]
