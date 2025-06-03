@@ -2,7 +2,7 @@ export const translations = {
   en: {
     navbar: {
       title: "Didzis Piļāns",
-      subtitle: "business transformation consultant",
+      subtitle: "Business transformation consultant",
       about: "About",
       services: "Services",
       results: "Results",
