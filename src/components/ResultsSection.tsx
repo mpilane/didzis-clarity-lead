@@ -156,7 +156,7 @@ const ResultsSection = ({ currentLanguage }: ResultsSectionProps) => {
                     href="https://www.linkedin.com/in/didzis-pilans/details/recommendations/?detailScreenTabIndex=0" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-consultant-blue-500 text-sm hover:underline"
+                    className="text-consultant-gray-400 text-sm hover:text-consultant-gray-600 transition-colors"
                   >
                     {t.results.readFullText}
                   </a>
