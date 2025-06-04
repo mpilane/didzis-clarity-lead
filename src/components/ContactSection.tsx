@@ -15,7 +15,7 @@ const ContactSection = ({ currentLanguage }: ContactSectionProps) => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <Avatar className="h-24 w-24 mb-8 mx-auto">
-            <AvatarImage alt="Didzis Piļāns" className="object-cover" src="/lovable-uploads/4ef2a845-94cf-4ec3-820c-ede23f3aa62a.png" />
+            <AvatarImage alt="Didzis Piļāns" className="object-cover" src="/lovable-uploads/3221b4eb-6e70-4c4c-843d-a76ef507dd71.png" />
             <AvatarFallback>DP</AvatarFallback>
           </Avatar>
           
@@ -28,9 +28,9 @@ const ContactSection = ({ currentLanguage }: ContactSectionProps) => {
               <span>+371 29448407</span>
             </a>
             
-            <a href="mailto:dpilans@gmail.com" className="flex items-center gap-3 text-consultant-gray-700 hover:text-consultant-navy transition-colors">
+            <a href="mailto:didzis@pilans.eu" className="flex items-center gap-3 text-consultant-gray-700 hover:text-consultant-navy transition-colors">
               <Mail size={24} />
-              <span>dpilans@gmail.com</span>
+              <span>didzis@pilans.eu</span>
             </a>
             
             <a href="https://www.linkedin.com/in/didzis-pilans" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-consultant-gray-700 hover:text-consultant-navy transition-colors">

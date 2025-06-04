@@ -30,7 +30,7 @@ const ContactForm = ({ currentLanguage }: ContactFormProps) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Create mailto link with form data to dpilans@gmail.com
+    // Create mailto link with form data to didzis@pilans.eu
     const subject = encodeURIComponent(`Message from ${formData.name}`);
     const body = encodeURIComponent(`
 Name: ${formData.name}
@@ -40,7 +40,7 @@ Message:
 ${formData.message}
     `);
 
-    const mailtoLink = `mailto:dpilans@gmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:didzis@pilans.eu?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink;
 
     setIsSubmitting(false);
