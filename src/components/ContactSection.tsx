@@ -17,7 +17,7 @@ const ContactSection = ({ currentLanguage }: ContactSectionProps) => {
             <img 
               src="/lovable-uploads/fdd4e37c-ca27-49a4-ad22-42380e5adf65.png" 
               alt="Didzis Piļāns" 
-              className="w-64 h-80 mx-auto rounded-lg shadow-lg object-cover"
+              className="w-80 h-60 mx-auto rounded-lg shadow-lg object-cover"
             />
           </div>
           
