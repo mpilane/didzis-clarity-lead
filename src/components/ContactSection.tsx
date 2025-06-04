@@ -28,9 +28,9 @@ const ContactSection = ({ currentLanguage }: ContactSectionProps) => {
               <span>+371 29448407</span>
             </a>
             
-            <a href="mailto:dpilans@gmail.com" className="flex items-center gap-3 text-consultant-gray-700 hover:text-consultant-navy transition-colors">
+            <a href="mailto:didzis@pilans.eu" className="flex items-center gap-3 text-consultant-gray-700 hover:text-consultant-navy transition-colors">
               <Mail size={24} />
-              <span>dpilans@gmail.com</span>
+              <span>didzis@pilans.eu</span>
             </a>
             
             <a href="https://www.linkedin.com/in/didzis-pilans" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-consultant-gray-700 hover:text-consultant-navy transition-colors">

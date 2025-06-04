@@ -19,7 +19,7 @@ const AboutSection = ({
           <p className="text-lg text-consultant-gray-800 mb-6 text-left">{t.about.content[0]}</p>
           <p className="text-lg text-consultant-gray-800 mb-6 text-left">{t.about.content[1]}</p>
           
-          <div className="max-w-4xl mx-auto text-center mb-8">
+          <div className="max-w-4xl mx-auto text-center my-12 py-8">
             <p className="text-consultant-gray-800 mb-4 italic font-medium text-2xl">{t.about.quote}</p>
           </div>
 
