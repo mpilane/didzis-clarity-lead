@@ -12,7 +12,7 @@ const AboutSection = ({
         <h2 className="text-5xl font-heading font-bold mb-16 text-consultant-navy uppercase tracking-wider text-center">{t.about.title}</h2>
 
         <div className="flex justify-center mb-12">
-          <img alt="Didzis Piļāns - Business Transformation Expert" src="/lovable-uploads/ce7ccd9d-0759-40df-8d35-f2e7b7c04cc8.jpg" className="rounded-lg shadow-xl w-80 h-auto object-cover" />
+          <img alt="Didzis Piļāns - Business Transformation Expert" src="/lovable-uploads/3221b4eb-6e70-4c4c-843d-a76ef507dd71.png" className="rounded-lg shadow-xl w-80 h-auto object-cover" />
         </div>
 
         <div className="max-w-4xl mx-auto">
