@@ -1,6 +1,5 @@
 
 import { Phone, Mail, Linkedin } from "lucide-react";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { translations } from "@/data/translations";
 
 interface ContactSectionProps {
@@ -14,10 +13,13 @@ const ContactSection = ({ currentLanguage }: ContactSectionProps) => {
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <Avatar className="h-24 w-24 mb-8 mx-auto">
-            <AvatarImage alt="Didzis Piļāns" className="object-cover" src="/lovable-uploads/3221b4eb-6e70-4c4c-843d-a76ef507dd71.png" />
-            <AvatarFallback>DP</AvatarFallback>
-          </Avatar>
+          <div className="mb-8 mx-auto">
+            <img 
+              src="/lovable-uploads/fdd4e37c-ca27-49a4-ad22-42380e5adf65.png" 
+              alt="Didzis Piļāns" 
+              className="w-64 h-80 mx-auto rounded-lg shadow-lg object-cover"
+            />
+          </div>
           
           <h2 className="text-3xl font-bold mb-8">{t.contact.title}</h2>
           <p className="text-xl font-medium text-consultant-gray-700 mb-10">{t.contact.subtitle}</p>
