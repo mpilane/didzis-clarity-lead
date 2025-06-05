@@ -15,7 +15,7 @@ const ContactSection = ({ currentLanguage }: ContactSectionProps) => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="mb-8 mx-auto">
             <img 
-              src="/lovable-uploads/fdd4e37c-ca27-49a4-ad22-42380e5adf65.png" 
+              src="/assets/images/didzis-contact.png" 
               alt="Didzis Piļāns" 
               className="w-80 h-60 mx-auto rounded-lg shadow-lg object-cover"
             />

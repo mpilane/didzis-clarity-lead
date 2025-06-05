@@ -1,3 +1,4 @@
+
 import { TrendingUp, BarChart, Globe, Users, Building } from "lucide-react";
 import { useState, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
@@ -24,12 +25,12 @@ const ResultsSection = ({ currentLanguage }: ResultsSectionProps) => {
   ];
 
   const logos = [
-    "/lovable-uploads/3e4d9e8a-b2d3-4f41-9382-fb9d4c494883.png",
-    "/lovable-uploads/d56571f7-bbe1-4389-86c8-417d8e90feaa.png",
-    "/lovable-uploads/f1321ae8-4183-448c-b334-c026c1584faf.png",
-    "/lovable-uploads/ceb65e96-9468-4bd6-9171-644a72d13527.png",
-    "/lovable-uploads/07c0df81-1b09-409c-80b0-fdd718614ae7.png",
-    "/lovable-uploads/3f2f6533-01fb-4e08-bfda-44ceddd7bf8f.png"
+    "/assets/images/spectre-logo.png",
+    "/assets/images/livonia-print-logo.png",
+    "/assets/images/aerodium-logo.png",
+    "/assets/images/expo-logo.png",
+    "/assets/images/itab-logo.png",
+    "/assets/images/european-lingerie-logo.png"
   ];
 
   useEffect(() => {
