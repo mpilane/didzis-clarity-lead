@@ -8,7 +8,6 @@ import ResultsSection from "@/components/ResultsSection";
 import ApproachSection from "@/components/ApproachSection";
 import CtaSection from "@/components/CtaSection";
 import ContactSection from "@/components/ContactSection";
-import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -24,7 +23,6 @@ const Index = () => {
       <ApproachSection currentLanguage={language} />
       <CtaSection currentLanguage={language} />
       <ContactSection currentLanguage={language} />
-      <ContactForm currentLanguage={language} />
       <Footer />
     </div>
   );

@@ -1,3 +1,4 @@
+
 export const translations = {
   en: {
     navbar: {
@@ -123,7 +124,7 @@ export const translations = {
           company: "European Lingerie Group",
           challenge: "No existing business unit for ready-made garments",
           solution: "Built a new unit from scratch, led production and sales, and expanded brand portfolio by 50%",
-          impact: "Reached €3M in annual contracts and successfully acquired a garment manufacturer in Belarus"
+          impact: "Reached €3M in annual contracts and successfully acquired a garment manufacturer in a low-cost country"
         }
       ],
       recommendations: [
@@ -178,18 +179,6 @@ export const translations = {
     contact: {
       title: "Didzis Piļāns",
       subtitle: "Business Transformation Consultant"
-    },
-    contactForm: {
-      title: "Get In Touch",
-      description: "Ready to transform your business? Send me a message and let's discuss how we can work together.",
-      name: "Name",
-      email: "Email",
-      message: "Message",
-      namePlaceholder: "Your full name",
-      emailPlaceholder: "your.email@example.com",
-      messagePlaceholder: "Tell me about your business challenges and how I can help...",
-      sendButton: "Send Message",
-      sending: "Sending..."
     }
   },
   lv: {
@@ -316,7 +305,7 @@ export const translations = {
           company: "European Lingerie Group",
           challenge: "Neesoša gatavu apģērbu ražošanas struktūrvienības",
           solution: "Izveidota jauna struktūrvienība, vadīta ražošana un pārdošana, paplašināts zīmolu portfelis par 50%",
-          impact: "Noslēgti līgumi €3M vērtībā gadā un iegādāts apģērbu ražotājs Baltkrievijā"
+          impact: "Noslēgti līgumi €3M vērtībā gadā un iegādāts apģērbu ražotājs Austrumeiropā"
         }
       ],
       recommendations: [
@@ -343,7 +332,7 @@ export const translations = {
       steps: [
         {
           number: "01",
-          title: "Diagnoze un audits",
+          title: "Izvērtēšana un audits",
           description: "Izpēte, datu analīze un skaidrības radīšana"
         },
         {
@@ -371,18 +360,6 @@ export const translations = {
     contact: {
       title: "Didzis Piļāns",
       subtitle: "Biznesa pārmaiņu konsultants"
-    },
-    contactForm: {
-      title: "Uzsāksim sadarbību",
-      description: "Nosūti ziņu un apspriedīsim, kā mēs varam sadarboties!",
-      name: "Vārds",
-      email: "Epasts",
-      message: "Ziņa",
-      namePlaceholder: "Jūsu vārds un uzvārds",
-      emailPlaceholder: "jusu.epasts@piemers.lv",
-      messagePlaceholder: "Pastāstiet par saviem biznesa izaicinājumiem un kā es varu palīdzēt...",
-      sendButton: "Nosūtīt ziņu",
-      sending: "Sūta..."
     }
   }
 };
